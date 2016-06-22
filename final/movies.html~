@@ -1,0 +1,357 @@
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Bollywood</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/0.2.0/Chart.min.js" type="text/javascript"></script>
+
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css"  media="screen,projection"/>
+
+
+</head>
+<body>
+
+<div style="position:absolute; background-color:#008080; height:705%; width:10%; left:0%;">
+</div>
+<div style="position:absolute; background-color:#008080; height:705%; width:10%; right:0%;">
+</div>
+
+<style>
+p {
+    font-size:150%;
+}
+
+h {
+    font-size:200%;
+}
+
+
+</style>
+<!----------------------Navigation bar start from here ------------------------------------------------>
+
+
+<div class="navbar-fixed">
+  <nav style="background-color:#008080;">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Bollywood</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	<li><a href="index.html">Home</a></li>
+        <li><a href="actors.html">Top 15 Actors</a></li>
+        <li><a href="actress.html">Top 15 Actress</a></li>
+        <li><a href="movies.html">Top 15 Movies</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+
+
+<img src="front.jpg" alt="Mountain View" style="width:100%; height:100%;">
+
+
+<!--------------------------put an image ------------------------------------------------------------------------>
+<br>
+<br>
+<br>
+<br>
+
+<br>
+<br>
+<br>
+
+<div style= "position:absolute; top:100%; left:20%; right:20%;">
+<br>
+<br>
+<br>
+<br>
+
+
+<strong><h> Top 15 Highest Grossing Indian films </h></strong> 
+<br>
+<br>
+<br>
+
+<p> Here we collection data about Highest Grossing Indian films  in last five years  and  collect their IMDB rating. we are trying to find how IMDB rating effection the gross of a movies. In Our data set found there no direct relation between both of two. Sometimes if IMDB rating is high then gross of that movies is also high but sometime if gross is high but rating is below average . <p>
+
+<br>
+<br>
+<br>
+
+ <table class="highlight">
+        <thead>
+          <tr>
+              <th data-field="id">Movie</th>
+              <th data-field="name">Collection</th>
+              <th data-field="price">IMDB Rating</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>PK</td>
+            <td>792</td>
+            <td>8.3</td>
+          </tr>
+          <tr>
+            <td>Bajrangi Bhaijaan</td>
+            <td>626</td>
+            <td>8.1</td>
+          </tr>
+          <tr>
+            <td>Bahubali</td>
+            <td>600</td>
+            <td>8.5</td>
+          </tr>
+
+
+	   <tr>
+            <td>Dhoom 3</td>
+            <td>542</td>
+            <td>5.5</td>
+          </tr>
+          <tr>
+            <td>Prem Ratan Dhan Payo</td>
+            <td>431</td>
+            <td>4.9</td>
+          </tr>
+          <tr>
+            <td>Chennai Express</td>
+            <td>423</td>
+            <td>6.0</td>
+          </tr>
+          <tr>
+            <td>3 Idiots</td>
+            <td>392</td>
+            <td>8.4</td>
+          </tr>
+          <tr>
+            <td>Dilwale</td>
+            <td>394</td>
+            <td>5.4</td>
+          </tr>
+          <tr>
+            <td>Happy New Year</td>
+            <td>385</td>
+            <td>5.3</td>
+          </tr>
+	    <tr>
+            <td>Kick</td>
+            <td>377</td>
+            <td>5.5</td>
+          </tr>
+	    <tr>
+            <td>Krrish 3</td>
+            <td>374</td>
+            <td>5.4</td>
+          </tr>
+	    <tr>
+            <td>Bajirao Mastani</td>
+            <td>367</td>
+            <td>7.2</td>
+          </tr>
+	    <tr>
+            <td>Bang Bang!</td>
+            <td>340</td>
+            <td>5.5</td>
+          </tr>
+	    <tr>
+            <td>Ek Tha Tiger</td>
+            <td>320</td>
+            <td>5.4</td>
+          </tr>
+	    <tr>
+            <td>Yeh Jawaani Hai Deewani</td>
+            <td>318</td>
+            <td>6.9</td>
+          </tr>
+        </tbody>
+      </table>
+
+<br>
+<br>
+<br>
+
+<strong><p> Here is variation between collection and imdb </p></strong>
+<br>
+<br>
+<br>
+<canvas id="buyers" width="600" height="400"></canvas>
+<br>
+<br>
+<br>
+
+</div>
+
+
+
+
+
+
+<div style= "position:absolute; top:390%; left:20%; right:20%;">
+<br>
+<br>
+<br>
+<strong><h> Top 10 Highest IMDB rated movies after 2011 </h></strong>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p> Now We collection data about top 10 Highest IMDB rated movies in bollywood after 2011 and their total collection on box office. We compared both these data and found some interesting results.
+
+<br>
+<br>
+<br>
+<table class="highlight">
+        <thead>
+          <tr>
+              <th data-field="id">Movie</th>
+              <th data-field="name">Collection</th>
+              <th data-field="price">IMDB Rating</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Sairat</td>
+            <td>100</td>
+            <td>9.1</td>
+          </tr>
+          <tr>
+            <td>Airlift</td>
+            <td>231</td>
+            <td>8.8</td>
+          </tr>
+          <tr>
+            <td>Drishyam</td>
+            <td>91</td>
+            <td>8.7</td>
+          </tr>
+
+
+	   <tr>
+            <td>Queen</td>
+            <td>98</td>
+            <td>8.4</td>
+          </tr>
+          <tr>
+            <td>Talvar</td>
+            <td>35</td>
+            <td>8.4</td>
+          </tr>
+          <tr>
+            <td>Bhag Milkha Bhag</td>
+            <td>164</td>
+            <td>8.3</td>
+          </tr>
+          <tr>
+            <td>Haider</td>
+            <td>69</td>
+            <td>8.3</td>
+          </tr>
+          <tr>
+            <td>PK</td>
+            <td>792</td>
+            <td>8.3</td>
+          </tr>
+          <tr>
+            <td>Bajrangi</td>
+            <td>626</td>
+            <td>8.1</td>
+          </tr>
+	    <tr>
+            <td>Neerja</td>
+            <td>8.1</td>
+            <td>135</td>
+          </tr>
+        </tbody>
+      </table>
+
+<br>
+<br>
+<br>
+
+<canvas id="collection" width="600" height="400" ></canvas>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<h>Soruce of data</h>
+ <ul>
+  <li>https://www.wikipedia.org/</li>
+  <li>http://www.koimoi.com/</li>
+  <li>http://www.imdb.com/</li>
+</ul> 
+</div>
+
+
+
+<script>
+       
+var buyerData = {
+	labels : [792, 626, 600, 542, 431, 423, 392, 394, 385, 377, 374, 367, 340 , 320 , 318],
+	datasets : [
+		{
+			label: "bollywood",
+			fillColor : "rgba(172,194,132,0.4)",
+			strokeColor : "#ACC26D",
+			pointColor : "#fff",
+			pointStrokeColor : "#9DB86D",
+			data : [8.3, 8.1, 8.5, 5.5, 4.9, 6.0, 8.4, 5.4, 5.3, 5.5, 5.4, 7.2, 5.5, 5.4, 6.9]
+		}
+	]
+}
+
+
+        // Get the context of the canvas element we want to select
+        var buyers = document.getElementById('buyers').getContext('2d');
+    new Chart(buyers).Line(buyerData);
+
+
+
+
+// data analysis of collection - budget 
+var buyerData = {
+	labels : [9.1, 8.8, 8.7, 8.4, 8.4, 8.3,8.3,8.3, 8.1, 8.1, 8.0],
+	datasets : [
+		{
+			label: "bollywood",
+			fillColor : "rgba(172,194,132,0.4)",
+			strokeColor : "#ACC26D",
+			pointColor : "#fff",
+			pointStrokeColor : "#9DB86D",
+			data : [100, 231, 91, 98, 35, 164, 69, 792, 626, 135, 152]
+		}
+	]
+}
+
+
+        // Get the context of the canvas element we want to select
+        var buyers = document.getElementById('collection').getContext('2d');
+    new Chart(buyers).Line(buyerData);
+
+
+
+
+
+
+
+    
+    </script>
+
+
+<script type="text/javascript" src="./jquery.js"></script>
+      <script type="text/javascript" src="./materialize/js/materialize.min.js"></script>
+</body>
+</html>

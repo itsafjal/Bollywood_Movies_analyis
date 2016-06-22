@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Bollywood</title>
+    <link href="./build/nv.d3.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.2/d3.min.js" charset="utf-8"></script>
+    <script src="./build/nv.d3.js"></script>
+<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="./materialize/css/materialize.min.css"  media="screen,projection"/>
+    <script src="lib/stream_layers.js"></script>
+    <style>
+        text {
+            font: 12px sans-serif;
+        }
+        svg {
+            display: block;
+        }
+    </style>
+</head>
+
+
+<body >
+<div style="position:absolute; background-color:#008080; height:1145%; width:10%; left:0%;">
+</div>
+<div style="position:absolute; background-color:#008080; height:1145%; width:10%; right:0%;">
+</div>
+
+<style>
+p {
+    font-size:150%;
+}
+
+h {
+    font-size:200%;
+}
+
+
+</style>
+<!----------------------Navigation bar start from here ------------------------------------------------>
+
+
+<div class="navbar-fixed">
+  <nav style="background-color:#008080;">
+    <div class="nav-wrapper">
+      <a href="#" class="brand-logo">Bollywood</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	<li><a href="index.html">Home</a></li>
+        <li><a href="actors.html">Top 15 Actors</a></li>
+        <li><a href="actress.html">Top 15 Actress</a></li>
+        <li><a href="movies.html">Top 15 Movies</a></li>
+      </ul>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+
+
+
+
+
+<img src="front.jpg" alt="Mountain View" style="width:100%; height:10%;">
+
+
+<!--------------------------put an image ------------------------------------------------------------------------>
+
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!----------------------------end of image portion------------------------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-------------------------Navigation bar ended--------------------------------------------------------->
+
+
+<!---------------------first heading start here------------------------------------------------------->
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+
+
+
+<!----------------------------heading ended here -------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------------first genre comparision divsion starting here ------------------------------------------------------>
+
+
+
+
+
+<div id="chart1" style="position:absolute; top:150%; left:20%; right:20%;">
+
+
+<!-------------------------table starting from here ----------------------------------------------------------------->
+
+
+<strong><h> Analysis on popularties of movies by genre </h></strong>
+
+<p>
+How a genre effect the collection of a movie. Here we collect data between 2011-16 .
+Here is our result. Romantic movies Have highest collection in bollywood after 2010 . At second position we got Action movies and last at the third postion we have comedy movies by collection between 2011-16</p>
+<br>
+<br>
+<br>
+
+
+<center>
+  <table class="highlight">
+        <thead>
+          <tr>
+              <th data-field="id">Id</th>
+              <th data-field="name">Genre Name</th>
+              <th data-field="price">Collection(Cr)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Romantic</td>
+            <td>5664</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Drama</td>
+            <td>2461</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Thriller</td>
+            <td>1480</td>
+          </tr>
+
+
+	          <tr>
+            <td>4</td>
+            <td>Comedy</td>
+            <td>3400</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Horror</td>
+            <td>282</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>Action</td>
+            <td>4913</td>
+          </tr>
+          <tr>
+            <td>7</td>
+            <td>Social</td>
+            <td>43</td>
+          </tr>
+          <tr>
+            <td>8</td>
+            <td>Sci-Fi</td>
+            <td>250</td>
+          </tr>
+          <tr>
+            <td>9</td>
+            <td>Biopic</td>
+            <td>300</td>
+          </tr>
+        </tbody>
+      </table>
+
+</center>
+<br>
+<br>
+<br>
+<p>Below we plot a graph between collection of movies and genre<p>
+<br>
+<br>
+<br>
+
+
+
+
+<!---------------------table ended------------------------------>
+ 
+<div style="position:absolute; top:100%; height:50%;">
+    <svg></svg>
+	</div>
+</div>
+
+
+
+
+<!---------------------------------End of Genre divsion----------------------------------------------------------------------->
+
+
+
+<div id="chart2" style="position:absolute; top:450%; left:15%; width:70%; right:20%; height:60%;">
+
+<strong><h> A Comparision between top Genre </h></strong>
+<p>Here is another type of analysis we done here is about an comparision between Top three genre having Highest collection in bollywood. Here we compare three of them and also compare them how they make profit and their budget </p>
+
+<br>
+<br>
+<br>
+<br>
+    <svg></svg>
+</div>
+
+<!-----------------------end of div---------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+<!------------------------Start of div to compare total collection by quarter----------------------------->
+
+<div id = "chart4" style= "position:absolute; top:600%; left:20%; right:20%;">
+
+
+<strong><h> Best Quarter To Realese A Movie in India </h></strong>
+<br>
+<br>
+<br>
+
+<p> To Get the popularity index for a quarter . We have total four quarter in a year. we get data of total collection of bollywood movies in these four quarters And our results are as we expecting.<p>
+
+<br>
+<br>
+<br>
+
+<p>In Bollywood third quarter(July-Sept) is best time for realising a movie. This is the time of festival in India so more vacation more people go for movies and more money.<p>
+<br>
+<br>
+<p> Third quarter of 2015  is on the top of the list with total collection of 1606 Cr. This is hight amount ever collected by bollywood movies in last five year in any quarter. 
+
+<br>
+<br>
+<br>
+<p>Below graph show how bollywood movies collection vary in these quarters <p>
+
+<br>
+<br>
+<br>
+<div style="position:absolute; top:100%; width:90%; height:50%;">
+<svg></svg>
+</div>
+
+</div>
+
+
+
+<!-----------------End of div to compare total collection by quarter----------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!---------------------Start of div to compare best year to release a movie in bollywood-------------------->
+
+<div id = "chart5" style= "position:absolute; top:800%; left:20%; right:20%;">
+<br>
+<br>
+<br>
+<br>
+<strong><h> Best Year For Bollywood between 2011-16 </h></strong>
+<p>Here is another type of analysis we done here is about  collection done by bollywood movies in last five year . According to our data set we found collection of bollywood movies is increasing between 2011-14 then decrease with some amount in 2015.</p>
+<br>
+<br>
+<br>
+<p>
+Below graph show how collection of movies increasing in last five years
+
+<div style="position:absolute; top:100%; width:90%; height:70%;">
+
+<svg></svg>
+
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+<!-------------------------end of  best year div ------------------------------------>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-----------------STart of best budget:collection ration div----------------------------------------------------------->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style= "position:absolute; top:970%; left:20%; right:20%;">
+
+<strong><h> Movies with Best Budget:Collection Ratio </h></strong>
+<p>This is the most interesting analysis we have done . we found movies with low budget and high collection . Monsoon Wedding Top in our list with budget:collection ration of 1:30. This movies was released in 2001. This movie also have good imdb rating(7.4). </p>
+<br>
+<p>Second we have Marathi movie Sairat with ration of 1:25 This movie is released in 2016 . Third we have movie Iqbal this movie was made with budget of 75 lacs and collect 45 Cr on box office </p>
+<br>
+<br>
+<p>
+Below Table  show  some movies of low budget and high collection
+
+<table class="highlight">
+        <thead>
+          <tr>
+              <th data-field="id">Movie</th>
+              <th data-field="name">Budget</th>
+              <th data-field="price">Collection(Cr)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Monsoon Wedding</td>
+            <td>1</td>
+            <td>30</td>
+          </tr>
+          <tr>
+            <td>Sairat</td>
+            <td>4</td>
+            <td>100+</td>
+          </tr>
+          <tr>
+          <tr>
+            <td>Aashiqui 2</td>
+            <td>9</td>
+            <td>109</td>
+          </tr>
+          <tr>
+            <td>kahani</td>
+            <td>10</td>
+            <td>100</td>
+          </tr>
+
+
+	          <tr>
+            <td>Iqbal</td>
+            <td>0.75</td>
+            <td>45</td>
+          </tr>
+          
+        </tbody>
+      </table>
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+
+<h>Soruce of data</h>
+ <ul>
+  <li>https://www.wikipedia.org/</li>
+  <li>http://www.koimoi.com/</li>
+  <li>http://www.imdb.com/</li>
+</ul> 
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------End of best budget:collection ration ----------------------------------------------------->
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+<script>
+
+    historicalBarChart = [
+        {
+            key: "Cumulative Return",
+            values: [
+                {
+                    "label" : "Romantic" ,
+                    "value" : 5664
+                } ,
+                {
+                    "label" : "Action" ,
+                    "value" : 4913
+                } ,
+                {
+                    "label" : "Comedy" ,
+                    "value" : 3400
+                } ,
+                {
+                    "label" : "Drama" ,
+                    "value" : 2461
+                } ,
+                {
+                    "label" : "Thriller" ,
+                    "value" : 1480
+                } ,
+                {
+                    "label" : "Biopic" ,
+                    "value" : 299
+                } ,
+                {
+                    "label" : "Horror" ,
+                    "value" : 282
+                } ,
+                {
+                    "label" : "Sci-Fi" ,
+                    "value" : 250
+                },
+                {
+                    "label" : "Social" ,
+                    "value" : 43
+                }
+            ]
+        }
+    ];
+
+    nv.addGraph(function() {
+        var chart = nv.models.discreteBarChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .staggerLabels(true)
+            //.staggerLabels(historicalBarChart[0].values.length > 8)
+            .showValues(true)
+            .duration(250)
+            ;
+
+        d3.select('#chart1 svg')
+            .datum(historicalBarChart)
+            .call(chart);
+
+        nv.utils.windowResize(chart.update);
+        return chart;
+    });
+
+
+</script>
+
+
+<!---------------------------Script for best quarter div --------------------------------------------------------------->
+
+
+
+<script>
+
+    historicalBarChart5 = [
+        {
+            key: "Cumulative Return",
+            values: [
+                {
+                    "label" : "2014" ,
+                    "value" : 4164
+                } ,
+                {
+                    "label" : "2013" ,
+                    "value" : 4108
+                } ,
+                {
+                    "label" : "2015" ,
+                    "value" : 4000
+                } ,
+                {
+                    "label" : "2012" ,
+                    "value" : 3728
+                } ,
+                {
+                    "label" : "2011" ,
+                    "value" : 2200
+                } 
+            ]
+        }
+    ];
+
+    nv.addGraph(function() {
+        var chart = nv.models.discreteBarChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .staggerLabels(true)
+            //.staggerLabels(historicalBarChart[0].values.length > 8)
+            .showValues(true)
+            .duration(250)
+            ;
+
+        d3.select('#chart5 svg')
+            .datum(historicalBarChart5)
+            .call(chart);
+
+        nv.utils.windowResize(chart.update);
+        return chart;
+    });
+
+
+</script>
+
+
+
+<!---------------------------end of best quarter script------------------------------------------------------------------------->
+
+<!---------------------------Script for best quarter div --------------------------------------------------------------->
+
+
+
+<script>
+
+    historicalBarChart4 = [
+        {
+            key: "Cumulative Return",
+            values: [
+                {
+                    "label" : "Third" ,
+                    "value" : 5951
+                } ,
+                {
+                    "label" : "Fourth" ,
+                    "value" : 5564
+                } ,
+                {
+                    "label" : "Second" ,
+                    "value" : 3830
+                } ,
+                {
+                    "label" : "First" ,
+                    "value" : 2826
+                } 
+            ]
+        }
+    ];
+
+    nv.addGraph(function() {
+        var chart = nv.models.discreteBarChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .staggerLabels(true)
+            //.staggerLabels(historicalBarChart[0].values.length > 8)
+            .showValues(true)
+            .duration(250)
+            ;
+
+        d3.select('#chart4 svg')
+            .datum(historicalBarChart4)
+            .call(chart);
+
+        nv.utils.windowResize(chart.update);
+        return chart;
+    });
+
+
+</script>
+
+
+
+<!---------------------------end of best Year script------------------------------------------------------------------------->
+<script>
+
+    var long_short_data = [
+        {
+            key: 'Budget',
+            values: [
+                {
+                    "label" : "Romantic" ,
+                    "value" : 2269
+                } ,
+                {
+                    "label" : "Action" ,
+                    "value" : 2561
+                } ,
+                {
+                    "label" : "Comedy" ,
+                    "value" : 1425
+                } 
+            ]
+        },
+        {
+            key: 'Collection',
+            values: [
+                {
+                    "label" : "Romantic" ,
+                    "value" : 5664
+                } ,
+                {
+                    "label" : "Action" ,
+                    "value" : 4913
+                } ,
+                {
+                    "label" : "Comedy" ,
+                    "value" : 3400
+                } 
+            ]
+        },
+        {
+            key: 'Profit',
+            values: [
+                {
+                    "label" : "Romantic" ,
+                    "value" : 3395
+                } ,
+                {
+                    "label" : "Action" ,
+                    "value" : 2352
+                } ,
+                {
+                    "label" : "Comedy" ,
+                    "value" : 1974
+                } 
+            ]
+        }
+    ];
+
+
+    var chart;
+    nv.addGraph(function() {
+        chart = nv.models.multiBarHorizontalChart()
+            .x(function(d) { return d.label })
+            .y(function(d) { return d.value })
+            .yErr(function(d) { return [-Math.abs(d.value * Math.random() * 0.3), Math.abs(d.value * Math.random() * 0.3)] })
+            .barColor(d3.scale.category20().range())
+            .duration(250)
+            .margin({left: 100})
+            .stacked(true);
+
+        chart.yAxis.tickFormat(d3.format(',.2f'));
+
+        chart.yAxis.axisLabel('Genre');
+        chart.xAxis.axisLabel('Profit').axisLabelDistance(20);
+
+        d3.select('#chart2 svg')
+            .datum(long_short_data)
+            .call(chart);
+
+        nv.utils.windowResize(chart.update);
+
+        chart.dispatch.on('stateChange', function(e) { nv.log('New State:', JSON.stringify(e)); });
+        chart.state.dispatch.on('change', function(state){
+            nv.log('state', JSON.stringify(state));
+        });
+        return chart;
+    });
+
+</script>
+
+
+
+
+</body>
+</html>
